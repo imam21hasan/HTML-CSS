@@ -1,0 +1,49 @@
+body{
+    margin: 15px 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notice-bar{
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    height: 35px;
+    width: 100%;
+    background: rgb(190, 204, 215);
+}
+.heading{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background: blue;
+    width: 150px;
+}
+.ln{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.main-notice{
+    background: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-notice p{
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    animation: moveNotice 10s linear infinite;
+}
+@keyframes moveNotice {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
