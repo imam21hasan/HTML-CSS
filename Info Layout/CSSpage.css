@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    height: 90%;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5%;
+    color: white;
+    background-color: #1c1b1b;
+    text-align: center;
+}
+.container h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(40, 235, 118);
+    margin-bottom: 0;
+}
+.container p{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(226, 183, 43);
+}
+.container form{
+    margin-top: 25px;
+}
+.info{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.info label{
+    display: block;
+    margin-bottom: 5px;
+}
+.info input,.info select,.info textarea{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+}
+.info textarea{
+    width: 80%;
+}
+.info input[type='button']
+{
+    width: 100px;
+    background-color: #1c1b1b;
+    color: #ddd;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info input[type='button']:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px aqua,0 0 34px aqua;
+}
+.info input[type='reset']
+{
+    width: 100px;
+    background-color: #1c1b1b;
+    color: #ddd;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info input[type='reset']:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px aqua,0 0 34px aqua;
+}
+.sub {
+    margin-left: 200px;
+}
