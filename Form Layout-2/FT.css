@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 450px;
+    height: 90%;
+    border: 2px solid blue;
+    border-radius: 5%;
+    margin: 20px auto;
+    padding: 5%;
+    text-align: center;
+    background-color: rgb(232, 193, 122);
+}
+.container h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+.container div{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+label{
+    margin-bottom: 5px;
+ }
+input,select,textarea{
+    border: 2px solid #e90606;
+    border-radius: 5px;
+    padding: 10px;
+}
+.ta textarea{
+    margin-left: 70px;
+}
+.sub input[type='submit']{
+    width: 80px;
+    background-color: green;
+    border: 1px solid red;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 200px;
+    cursor: pointer;
+ }
+ .sub input[type='submit']:hover{
+    background-color: blueviolet;
+ }
+ .sub input[type='reset']{
+    width: 80px;
+    background-color: red;
+    border: 1px solid green;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ .sub input[type='reset']:hover{
+    background-color: blueviolet;
+ }
