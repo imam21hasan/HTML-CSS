@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  width: 600px;
+  height: 600px;
+  background-color: lightblue;
+  border: 4px solid black;
+  border-radius: 15px;
+  position: relative;
+}
+.circular-1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 5;
+  border-radius: 50%;
+}
+.circular-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #2f3542;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 4;
+  border: 4px dotted white;
+  border-radius: 50%;
+  animation: rotate 12s linear infinite;
+}
+.circular-3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(241, 123, 13);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 3;
+  border: 4px dashed white;
+  border-radius: 50%;
+  animation: rotate 18s linear infinite;
+}
+.circular-4 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(104, 27, 220);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 2;
+  border: 4px dotted white;
+  border-radius: 50%;
+  animation: rotate 30s linear infinite;
+}
+.circular-5 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(211, 31, 31);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  border: 4px dashed white;
+  border-radius: 50%;
+  animation: rotate 15s linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.circular-1::after,
+.circular-1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #fffa65,
+    #ffffff,
+    #32ff7e,
+    #ffffff,
+    #ff3838,
+    #ffffff,
+    #18dcff
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  /* z-index: -1; */
+  padding: 0px;
+  border-radius: 50%;
+  animation: ani 3s linear infinite;
+}
+
+@keyframes ani {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
